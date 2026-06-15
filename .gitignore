@@ -1,0 +1,26 @@
+# large model artifacts live on the HuggingFace Hub, not in git
+*.safetensors
+*.ckpt
+*.pt
+phylo2_mapping.json
+parent_to_child_mapping.csv
+
+# data
+*.tsv
+*.tsv.gz
+benchmark/sample_*.tsv
+benchmark/sequences.fasta
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+env/
+
+# benchmark run logs (keep results/*.csv, *.png, summary)
+benchmark/results/full_run.log
+
+# internal release notes (kept local, not published)
+PUBLISHING.md
